@@ -1,0 +1,18 @@
+midSelect =  len (midMembers) // 20
+                                 بالنسبة إلى ذكر الأعضاء في  النطاق (midSelect + 1 ):
+                                     لا =  0
+                                     ret_ =  " "
+                                     ret_ =  " M [اذكر الأعضاء] "
+                                     dataMid = []
+                                     من أجل dataMention in group.members [ذكر الأعضاء * 20 : (ذكر الأعضاء + 1 ) * 20 ]:
+                                         dataMid.append (dataMention.mid)
+                                         لا + =  1
+                                         ret_ + =  " " .format ( str (no))
+                                     ret_ + =  " " .format ( str ( len (dataMid)))
+                                     البنود. sendMessageWithMention ( إلى ، ret_ ، dataMid)
+                                         ret_ + =  " \ n ╠ {} . @! " .format ( str (no))
+                                     ret_ + =  " \ n ╚══ [مجموع {} الأعضاء] " .format ( str ( len (dataMid)))
+                                     البنود. sendMention (msg. إلى ، ret_ ، dataMid)
+                 elif text.lower () ==  ' changepictureprofile ' :
+                             الإعدادات [ " changePicture " ] =  صحيح
+                             cl.sendMessage (إلى ، " Silahkan kirim gambarnya " )
